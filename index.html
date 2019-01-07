@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Real-time Monitoring</title>
+    <meta name="author" content="Vo Duy Tuan - tuanmaster2012@gmail.com">
+    <script src='/socket.io/socket.io.js'></script>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <script src="/assets/jquery.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <strong>REAL-TIME LOG MONITOR</strong> User ID: <input type="text" size="10" id="fuid" value="1" class="textbox" />
+        -
+        Filter by text:
+        <input type="text" id="fkeyword" size="50" value="" placeholder="Type your keyword to filter log entry" class="textbox" />
+        -
+        <label><input type="checkbox" id="fpause" value="1">Pause monitor</label>
+    </div>
+    <div id="container">
+        <div id="logs">
+            <ul></ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/client.js"></script>
+</body>
+</html>
